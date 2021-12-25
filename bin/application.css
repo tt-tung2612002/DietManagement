@@ -1,0 +1,61 @@
+/*
+ * hide tableview header:
+ *   hide-tableview-header: our custom selector, we don't want to apply the hidden header on all tableviews
+ *   column-header-background: tableview internal header
+ */
+.tableview-header-hidden .column-header-background {
+  visibility: hidden;
+  -fx-padding: -1em;
+}
+.text-field:empty {
+  -fx-alignment: center;
+}
+.text-field:empty:focused {
+  -fx-alignment: center-left;
+}
+
+/* Hide the horizontal scrollbar of the summary table  
+ * derived from http://blog.ngopal.com.np/2012/09/25/how-to-bind-vertical-scroll-in-multi-tableview/
+ */
+.sumtable .scroll-bar:horizontal .track {
+  -fx-padding: 0px;
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-background-radius: 0em;
+  -fx-border-radius: 2em;
+}
+
+.sumtable .scroll-bar:horizontal .increment-button,
+.sumtable .scroll-bar:horizontal .decrement-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0em;
+  -fx-padding: 0 0 0 0;
+}
+
+.sumtable .scroll-bar:horizontal .increment-arrow,
+.sumtable .scroll-bar:horizontal .decrement-arrow {
+  -fx-shape: " ";
+  -fx-padding: 0;
+}
+
+.sumtable .scroll-bar:horizontal .thumb {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0, 0, 0;
+  -fx-background-radius: 2em;
+  -fx-padding: 0px;
+}
+.col.table-cell {
+  -fx-font-size: 15pt;
+  -fx-alignment: CENTER;
+  -fx-font-family: "JetBrains Mono NL SemiBold";
+}
+.sumCol.table-cell {
+  -fx-font-size: 15pt;
+  -fx-font-family: "JetBrains Mono NL SemiBold";
+  -fx-alignment: CENTER;
+}
+.table-view .column-header.foo .label {
+  -fx-font-size: 15pt;
+  -fx-text-alignment: center;
+  -fx-font-family: "JetBrains Mono NL SemiBold";
+}

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="myAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PersonalInfoController">
+    <children>
+        <SVGPath content="M 100 300 Q 400 350 700 300 L 700 200 L 100 200 L 100 300 " fill="#32e88d" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <HBox layoutX="81.0" layoutY="252.0" prefHeight="174.0" prefWidth="440.0" style="-fx-background-color: white; -fx-background-radius: 30;" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="79.0">
+         <children>
+            <VBox prefHeight="174.0" prefWidth="220.0">
+               <children>
+                  <Text fx:id="TDEEValue" fill="#fc8f3d" strokeType="OUTSIDE" strokeWidth="0.0" text="2512" textAlignment="CENTER" wrappingWidth="220.0">
+                     <font>
+                        <Font name="JetBrains Mono ExtraBold" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kcal/Day" textAlignment="CENTER" wrappingWidth="220.0">
+                     <font>
+                        <Font name="JetBrains Mono NL SemiBold" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox prefHeight="174.0" prefWidth="220.0">
+               <children>
+                  <JFXSpinner fx:id="TDEEProgress" depthTest="ENABLE" prefHeight="175.0" prefWidth="220.0" progress="0.0" startingAngle="0.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXSpinner>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow color="#00000088" />
+         </effect>
+        </HBox>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Information" wrappingWidth="249.6708984375">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Total Daily Energy Expenditure (TDEE)" wrappingWidth="600.0">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Body Mass Index (BMI)" wrappingWidth="547.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="26.0">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="22.0" />
+         </font>
+      </Text>
+      <HBox layoutX="80.0" layoutY="544.0" prefHeight="220.0" prefWidth="440.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <VBox prefHeight="220.0" prefWidth="220.0">
+               <children>
+                  <VBox prefHeight="110.0" prefWidth="220.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BMI" textAlignment="CENTER" wrappingWidth="181.1999969482422">
+                           <font>
+                              <Font name="JetBrains Mono SemiBold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="BMIValue" fill="#fc8f3d" strokeType="OUTSIDE" strokeWidth="0.0" text="22.2" textAlignment="CENTER" wrappingWidth="179.1999969482422">
+                           <font>
+                              <Font name="JetBrains Mono ExtraBold" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="7.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="110.0" prefWidth="220.0">
+                     <children>
+                        <Text fx:id="heightValue" strokeType="OUTSIDE" strokeWidth="0.0" text="167 cm" textAlignment="CENTER" wrappingWidth="180.1999969482422">
+                           <font>
+                              <Font name="JetBrains Mono Medium" size="22.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Height" textAlignment="CENTER" wrappingWidth="180.4000015258789">
+                           <font>
+                              <Font name="JetBrains Mono SemiBold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="7.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="220.0" prefWidth="212.0">
+               <children>
+                  <VBox prefHeight="110.0" prefWidth="220.0">
+                     <children>
+                        <HBox>
+                           <VBox.margin>
+                              <Insets top="17.0" />
+                           </VBox.margin>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="19" textAlignment="RIGHT" wrappingWidth="61.0">
+                                 <font>
+                                    <Font name="JetBrains Mono Medium" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" years old" wrappingWidth="159.0">
+                                 <font>
+                                    <Font name="JetBrains Mono Medium" size="24.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age" textAlignment="CENTER" wrappingWidth="220.0">
+                           <font>
+                              <Font name="JetBrains Mono SemiBold" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="7.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="110.0" prefWidth="220.0">
+                     <children>
+                        <Text fx:id="weightValue" strokeType="OUTSIDE" strokeWidth="0.0" text="62 KG" textAlignment="CENTER" wrappingWidth="180.1999969482422">
+                           <font>
+                              <Font name="JetBrains Mono Medium" size="22.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Weight" textAlignment="CENTER" wrappingWidth="180.4000015258789">
+                           <font>
+                              <Font name="JetBrains Mono SemiBold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="7.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow color="#00000089" />
+         </effect>
+      </HBox>
+      <Line endX="413.0" layoutX="66.0" layoutY="650.0" startX="54.0" stroke="#0000005e">
+         <effect>
+            <DropShadow color="#00000078" />
+         </effect>
+      </Line>
+      <Line endX="-50.0" endY="282.0" layoutX="356.0" layoutY="450.0" startX="-50.0" startY="124.0" stroke="#0000005e">
+         <effect>
+            <DropShadow color="#00000078" />
+         </effect>
+      </Line>
+      <Line endX="-59.0" endY="-62.0" layoutX="366.0" layoutY="460.0" startX="-59.0" startY="-175.0" stroke="#0000005e">
+         <effect>
+            <DropShadow color="#00000074" />
+         </effect>
+      </Line>
+      <JFXButton fx:id="continueButton" contentDisplay="CENTER" focusTraversable="false" layoutX="211.0" layoutY="825.0" onAction="#switchToStatus" style="-fx-text-fill: transparent;" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="211.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_CIRCLE_RIGHT" size="60" textAlignment="CENTER" />
+         </graphic>
+      </JFXButton>
+    </children>
+</AnchorPane>

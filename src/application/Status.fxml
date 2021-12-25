@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXNodesList?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="myAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StatusController">
+   <children>
+      <SVGPath content="M 100 400 C 200 500 600 500 700 400 L 700 100 L 100 100 L 100 400 " fill="#32e88d" layoutX="-94.0" layoutY="-100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXSpinner fx:id="statusSpinner" layoutX="167.0" layoutY="41.0" prefHeight="200.0" prefWidth="261.0" progress="0.0" startingAngle="0.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="41.0" />
+      <Text fx:id="totalCaloriesToBurn" fill="WHITE" layoutX="237.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="125.6708984375">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="210.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="need to burn" textAlignment="CENTER" wrappingWidth="179.6708984375">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="21.0" />
+         </font>
+      </Text>
+      <JFXDatePicker fx:id="myDatePicker" defaultColor="#ff8041" editable="false" focusTraversable="false" layoutX="390.0" layoutY="14.0" prefHeight="28.0" prefWidth="205.0" showWeekNumbers="true" />
+      <Text fx:id="date" fill="WHITE" layoutX="8.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today" wrappingWidth="247.99999779462814">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="burnedCalories" fill="WHITE" layoutX="451.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="86.0">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="consumedCalories" fill="WHITE" layoutX="45.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="105.9999982714653">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="8.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="consumed" textAlignment="CENTER" wrappingWidth="179.6708984375">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="403.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="burned" textAlignment="CENTER" wrappingWidth="179.6708984375">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="21.0" />
+         </font>
+      </Text>
+      <JFXProgressBar fx:id="carbProgress" layoutX="58.0" layoutY="286.0" prefHeight="3.0" prefWidth="94.0" progress="0.0" />
+      <JFXProgressBar fx:id="proteinProgress" layoutX="259.0" layoutY="287.0" prefHeight="3.0" prefWidth="94.0" progress="0.0" />
+      <JFXProgressBar fx:id="fatProgress" layoutX="447.0" layoutY="284.0" prefHeight="4.0" prefWidth="94.0" progress="0.0" />
+      <Text fill="WHITE" layoutX="59.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carbs" textAlignment="CENTER" wrappingWidth="93.6708927154541">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Proteins" textAlignment="CENTER" wrappingWidth="95.00425148010254">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="446.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fats" textAlignment="CENTER" wrappingWidth="93.67090797424316">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentCarbDisplay" fill="WHITE" layoutX="35.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="52.67090034484863">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalCarbDisplay" fill="WHITE" layoutX="120.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="162" wrappingWidth="68.67090034484863">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="101.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" textAlignment="CENTER" wrappingWidth="12.337564468383789">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentProteinDisplay" fill="WHITE" layoutX="235.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="52.67089509963989">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalProteinDisplay" fill="WHITE" layoutX="315.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="140" wrappingWidth="68.6709104180336">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="297.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" textAlignment="CENTER" wrappingWidth="12.337564468383789">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentFatDisplay" fill="WHITE" layoutX="420.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="59.67090034484863">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalFatDisplay" fill="WHITE" layoutX="508.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40" wrappingWidth="68.67090929672122">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="488.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" textAlignment="CENTER" wrappingWidth="12.337564468383789">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="15.0" />
+         </font>
+      </Text>
+      <JFXTabPane layoutX="-2.0" layoutY="384.0" prefHeight="483.0" prefWidth="600.0">
+         <tabs>
+            <Tab text="Daily Chart">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="600.0">
+                     <children>
+                        <PieChart fx:id="dailyChart" legendVisible="false" prefHeight="400.0" prefWidth="600.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Daily Intake">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="600.0" />
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <JFXSpinner fx:id="backgroundSpinner" layoutX="167.0" layoutY="41.0" prefHeight="200.0" prefWidth="261.0" progress="1.0" />
+      <JFXNodesList alignment="CENTER_LEFT" layoutX="540.0" layoutY="840.0" rotate="180.0" spacing="15.0">
+         <children>
+            <JFXButton fx:id="nodeButton" contentDisplay="GRAPHIC_ONLY" prefHeight="40.0" prefWidth="40.0" text="Node 1">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLUS" size="30" style="-fx-fill: white;" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="exercisesButton" buttonType="RAISED" contentDisplay="RIGHT" text="Excercises">
+               <font>
+                  <Font name="Fira Code Regular" size="20.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView glyphName="HUMAN" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="dishesButton" buttonType="RAISED" contentDisplay="RIGHT" onAction="#switchToView" text="Dishes">
+               <font>
+                  <Font name="Fira Code Regular" size="20.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView glyphName="SILVERWARE_VARIANT" size="25" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </JFXNodesList>
+      <JFXButton fx:id="continueButton" contentDisplay="CENTER" focusTraversable="false" layoutY="831.0" onAction="#switchToInfo" prefHeight="72.0" prefWidth="136.0" style="-fx-text-fill: transparent;" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="465.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_CIRCLE_LEFT" size="60" textAlignment="CENTER" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

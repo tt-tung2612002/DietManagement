@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="myAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#32e88d" height="230.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" width="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane layoutX="70.0" layoutY="102.0" prefHeight="55.0" prefWidth="460.0" style="-fx-background-color: white; -fx-background-radius: 30;" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0">
+         <children>
+            <FontAwesomeIconView glyphName="SEARCH" layoutX="14.0" layoutY="36.0" size="25" />
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="178.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Diet" textAlignment="CENTER" wrappingWidth="243.6708984375">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="37.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="textField" focusColor="WHITE" layoutX="121.0" layoutY="112.0" prefHeight="34.0" prefWidth="390.0" promptText="Search menu...." unFocusColor="WHITE">
+         <font>
+            <Font name="JetBrains Mono NL SemiBold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <ScrollPane fx:id="menuScrollPane" layoutX="32.0" layoutY="284.0" prefHeight="572.0" prefWidth="537.0">
+         <content>
+            <JFXListView fx:id="menuListView" prefHeight="570.0" prefWidth="535.0" showTooltip="true" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

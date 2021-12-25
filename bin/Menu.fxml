@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleNode?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="myAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <SVGPath content="M 100 300 Q 400 350 700 300 L 700 200 L 100 200 L 100 300 " fill="#53f2a7" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <VBox layoutX="107.0" layoutY="54.0" prefHeight="273.0" prefWidth="400.0" style="-fx-background-color: white; -fx-background-radius: 25;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <children>
+            <Text fill="#1b1a1a" strokeType="OUTSIDE" strokeWidth="0.0" text="How much do you excercise?" textAlignment="CENTER" wrappingWidth="385.6708984375">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="JetBrains Mono ExtraBold" size="24.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="textField1" focusColor="#2a9360" labelFloat="true" prefHeight="37.0" prefWidth="386.0" promptText="Minutes/Per Day">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="JetBrains Mono NL SemiBold" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="textField2" focusColor="#2a9360" labelFloat="true" prefHeight="48.0" prefWidth="386.0" promptText="Days/Per Week">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="JetBrains Mono SemiBold" size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+         <effect>
+            <DropShadow color="#05050575" />
+         </effect>
+      </VBox>
+      <HBox layoutX="128.0" layoutY="355.0" prefHeight="100.0" prefWidth="341.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+         <children>
+            <JFXToggleNode fx:id="maleButton" prefHeight="100.0" prefWidth="150.0">
+               <graphic>
+                  <MaterialDesignIconView glyphName="GENDER_MALE" size="60" />
+               </graphic>
+            </JFXToggleNode>
+            <JFXToggleNode fx:id="femaleButton" prefHeight="100.0" prefWidth="150.0">
+               <graphic>
+                  <MaterialDesignIconView glyphName="GENDER_FEMALE" size="60" />
+               </graphic>
+            </JFXToggleNode>
+         </children>
+      </HBox>
+      <VBox layoutX="112.0" layoutY="470.0" prefHeight="100.0" prefWidth="396.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <children>
+            <HBox prefHeight="41.0" prefWidth="391.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Height" wrappingWidth="197.67088317871094">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="cm" textAlignment="RIGHT" wrappingWidth="197.67088317871094">
+                     <font>
+                        <Font name="JetBrains Mono NL SemiBold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <JFXSlider fx:id="heightSlider" blockIncrement="1.0" majorTickUnit="1.0" max="300.0" min="50.0" minorTickCount="1" prefHeight="90.0" prefWidth="396.0" snapToTicks="true" value="175.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <HBox layoutX="112.0" layoutY="610.0" prefHeight="129.0" prefWidth="394.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0">
+         <children>
+            <VBox prefHeight="129.0" prefWidth="201.0">
+               <children>
+                  <HBox prefHeight="52.0" prefWidth="198.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Weight" wrappingWidth="99.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kg" textAlignment="RIGHT" wrappingWidth="97.67088317871094">
+                           <font>
+                              <Font name="JetBrains Mono NL SemiBold" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <JFXSlider fx:id="weightSlider" blockIncrement="1.0" majorTickUnit="1.0" min="30.0" minorTickCount="1" value="40.0" />
+                  <HBox prefHeight="51.0" prefWidth="198.0" />
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="129.0" prefWidth="189.0">
+               <children>
+                  <HBox prefHeight="52.0" prefWidth="198.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age" textAlignment="CENTER" wrappingWidth="197.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <JFXSlider fx:id="ageSlider" blockIncrement="1.0" majorTickUnit="1.0" minorTickCount="1" />
+                  <HBox prefHeight="51.0" prefWidth="198.0" />
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <JFXToggleNode fx:id="continueButton" layoutX="210.0" layoutY="774.0" onAction="#switchToView" prefHeight="52.0" prefWidth="204.0" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="210.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_CIRCLE_RIGHT" size="60" />
+         </graphic>
+      </JFXToggleNode>
+      <JFXButton fx:id="heightMinus" layoutX="48.0" layoutY="513.0" prefHeight="41.0" prefWidth="54.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="MINUS" size="30" wrappingWidth="36.42856979370117" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="heightPlus" layoutX="510.0" layoutY="514.0" prefHeight="41.0" prefWidth="54.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="30" wrappingWidth="36.42856979370117" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="agePlus" layoutX="484.0" layoutY="684.0" prefHeight="41.0" prefWidth="42.0">
+         <graphic>
+            <FontAwesomeIconView fx:id="age" glyphName="PLUS" size="30" textAlignment="RIGHT" wrappingWidth="25.428569793701172" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="ageMinus" layoutX="315.0" layoutY="684.0" prefHeight="41.0" prefWidth="48.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="MINUS" size="30" wrappingWidth="30.428569793701172" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="weightMinus" layoutX="85.0" layoutY="684.0" prefHeight="41.0" prefWidth="47.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="MINUS" size="30" wrappingWidth="30.428569793701172" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="weightPlus" layoutX="249.0" layoutY="684.0" prefHeight="41.0" prefWidth="53.0" textAlignment="RIGHT">
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="30" textAlignment="RIGHT" wrappingWidth="36.42856979370117" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

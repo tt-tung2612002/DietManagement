@@ -1,0 +1,452 @@
+.body-background {
+  -fx-background-image: url("/bg.jpg");
+  -fx-background-size: 100% 100%;
+  -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+.intro {
+  -fx-background-image: url("/background.png");
+}
+
+.jfx-hamburger-icon {
+  -fx-spacing: 5;
+  -fx-cursor: hand;
+}
+.jfx-hamburger-icon:hover {
+  -fx-background-color: #778299;
+  -fx-text-fill: white;
+}
+.jfx-hamburger-icon StackPane {
+  -fx-pref-width: 30px;
+  -fx-pref-height: 5px;
+  -fx-background-color: black;
+  -fx-background-radius: 5px;
+}
+/*******************************************************************************
+*                                                                              *
+* 						      JFX Edit Menu                                    *
+*                                                                              *
+*******************************************************************************/
+
+.editButton {
+  -fx-border-radius: 60;
+  -fx-background-radius: 60;
+  -fx-alignment: center;
+  -fx-font-family: "Fira Code";
+  -fx-font-size: 17px;
+  -fx-font-weight: BOLD;
+  -fx-text-fill: white;
+  -fx-background-color: #526c7d;
+}
+
+.editButton :hover {
+  -fx-font-family: "Fira Code";
+  -fx-font-size: 19px;
+  -fx-font-weight: BOLD;
+  -fx-background-color: #778299;
+}
+.editPane {
+  -fx-background-color: rgba(0, 100, 100, 0.5);
+  -fx-background-radius: 30;
+  -fx-border-radius: 30;
+  -fx-alignment: center;
+}
+/*******************************************************************************
+*                                                                              *
+* 							    JFX Button                                     *
+*                                                                              *
+*******************************************************************************/
+.my-button:hover {
+  -fx-font-family: "Fira Code";
+  -fx-font-weight: BOLD;
+  -fx-font-size: 20px;
+  -fx-background-color: #778299;
+  -fx-text-fill: white;
+}
+.my-button:focused {
+  -fx-font-family: "Fira Code";
+  -fx-font-weight: BOLD;
+  -fx-font-size: 20px;
+  -fx-background-color: #778299;
+  -fx-fill: white;
+}
+.my-button {
+  -fx-text-fill: white;
+}
+.button:hover .glyph-icon {
+  -fx-fill: white;
+}
+.sound-button:hover {
+  -fx-font-family: "Fira Code";
+  -fx-font-weight: BOLD;
+  -fx-font-size: 20px;
+  -fx-background-color: #778299;
+  -fx-text-fill: white;
+}
+.sound-button {
+  -fx-text-fill: black;
+}
+/*******************************************************************************
+*                                                                              *
+* 							  JFX Validator                                    *
+*                                                                              *
+*******************************************************************************/
+.warning {
+  -fx-fill: red;
+}
+
+/*******************************************************************************
+*                                                                              *
+*                          Notification Pop Up                                 *
+*                                                                              *
+*******************************************************************************/
+.jfx-snackbar-content {
+  -fx-font-family: "Fira Code";
+  -fx-font-weight: NORMAL;
+  -fx-font-size: 17px;
+  -fx-background-color: #323232;
+}
+
+.jfx-snackbar-toast {
+  -fx-text-fill: WHITE;
+}
+
+.jfx-snackbar-action {
+  -fx-font-family: "Fira Code";
+  -fx-font-weight: NORMAL;
+  -fx-font-size: 17px;
+  -fx-background-color: #2a7480;
+  -fx-background-radius: 4px;
+  -fx-text-fill: white;
+}
+
+/*******************************************************************************
+*                                                                              *
+* Favorite Button                                                             *
+*                                                                              *
+*******************************************************************************/
+.fav .glyph-icon {
+  -fx-fill: #f2c549;
+  -fx-padding: 10;
+  -fx-cursor: hand;
+}
+.icons-badge .badge-pane {
+  -fx-background-color: #ff4081;
+  -fx-background-radius: 23;
+  -fx-pref-width: 23;
+  -fx-pref-height: 23;
+  -fx-alignment: center;
+}
+
+.icons-badge Label {
+  -fx-font-weight: BOLD;
+  -fx-font-size: 14px;
+  -fx-text-fill: WHITE;
+}
+
+/*******************************************************************************
+*                                                                              *
+* 						 JFX Animation for container                           *
+*                                                                              *
+*******************************************************************************/
+.icon {
+  -fx-fill: #fe774d;
+  -fx-padding: 10;
+  -fx-cursor: hand;
+}
+
+.icons-rippler {
+  -jfx-background-color: #e6ede8;
+  -jfx-rippler-fill: #fe774d;
+  -jfx-mask-type: CIRCLE;
+}
+
+.icons-rippler1 {
+  -jfx-rippler-fill: #4285f4;
+  -jfx-mask-type: CIRCLE;
+}
+
+.icons-rippler:hover {
+  -fx-cursor: hand;
+}
+
+.animated-burgers .jfx-hamburger StackPane {
+  -fx-background-color: #5264ae;
+  -fx-background-radius: 4px;
+}
+
+.animated-burgers .jfx-rippler {
+  -jfx-rippler-fill: #5264ae;
+}
+
+.icons-badge .badge-pane {
+  -fx-background-color: #ff4081;
+  -fx-background-radius: 23;
+  -fx-pref-width: 23;
+  -fx-pref-height: 23;
+  -fx-alignment: center;
+}
+
+.icons-badge Label {
+  -fx-font-weight: BOLD;
+  -fx-font-size: 14px;
+  -fx-text-fill: WHITE;
+}
+
+/*******************************************************************************
+*                                                                              *
+* 							     JFX Spinner                                   *
+*                                                                              *
+*******************************************************************************/
+.percentage .arc {
+  -fx-stroke: white;
+  -fx-stroke-width: 5;
+}
+.percentage .text {
+  visibility: false;
+}
+.background-spinner .text {
+  visibility: false;
+}
+.background-spinner .arc {
+  -fx-stroke: rgb(245, 239, 239);
+  -fx-stroke-width: 2;
+}
+/*******************************************************************************
+*                                                                              *
+* 							   JFX List View                                   *
+*                                                                              *
+*******************************************************************************/
+.custom-jfx-list-view .jfx-list-cell:odd:selected > .jfx-rippler > StackPane,
+.custom-jfx-list-view .jfx-list-cell:even:selected > .jfx-rippler > StackPane {
+  -fx-background-color: rgba(255, 0, 0, 0.2);
+}
+
+.custom-jfx-list-view {
+  -fx-font-family: "Arial";
+  -fx-font-weight: NORMAL;
+  -fx-font-size: 17px;
+  -jfx-mask-type: CIRCLE;
+  -fx-background-insets: 0;
+  -jfx-cell-horizontal-margin: 0;
+  -jfx-cell-vertical-margin: 5;
+  -jfx-expanded: false;
+  -fx-max-width: 200px;
+  /* important to hide the list change of height */
+  -fx-background-color: TRANSPARENT;
+}
+
+.custom-jfx-list-view .jfx-rippler {
+  -jfx-rippler-fill: #a6e3de;
+}
+.custom-jfx-list-view .jfx-list-cell .sublist-header > .drop-icon {
+  -fx-background-color: GRAY;
+}
+
+.custom-jfx-list-view .jfx-list-cell:filled:hover .sublist-header > .drop-icon {
+  -fx-background-color: BLACK;
+}
+/*******************************************************************************
+*                                                                              *
+*                               JFX PopUp                                      *
+*                                                                              *
+*******************************************************************************/
+.jfx-popup-overlay-pane {
+  -fx-background-color: transparent;
+}
+
+.jfx-popup-container {
+  -fx-background-color: transparent;
+}
+.jfx-time-picker > .jfx-text-field {
+  visibility: false;
+}
+/*******************************************************************************
+*                                                                              *
+* 						                 JFX Node Lists                                  *
+*                                                                              *
+*******************************************************************************/
+.node-button {
+  -fx-font-family: "Fira Code";
+  -fx-background-color: #526c7d;
+  -fx-background-radius: 60px;
+}
+.subnode-button {
+  -fx-font-family: "Fira Code";
+  -fx-font-weight: BOLD;
+  -fx-font-size: 20px;
+  -fx-background-color: #526c7d;
+  -fx-text-fill: white;
+}
+.node-button .jfx-rippler {
+  -jfx-rippler-fill: #ceedd7;
+}
+.node-button .glyph-icon {
+  -fx-fill: white;
+}
+.subnode-button .glyph-icon {
+  -fx-fill: white;
+}
+
+.subnode-button:hover {
+  -fx-font-family: "Fira Code";
+  -fx-font-weight: BOLD;
+  -fx-font-size: 22px;
+  -fx-background-color: #778299;
+  -fx-text-fill: white;
+}
+/*******************************************************************************
+*                                                                              *
+* 						                JFX TabPane                                      *
+*                                                                              *
+*******************************************************************************/
+.jfx-tab-pane .tab-header-background {
+  -fx-background-color: #526c7d;
+}
+
+/*******************************************************************************
+*                                                                              *
+* 						              JFX Toggle Button                                  *
+*                                                                              *
+*******************************************************************************/
+.toggle-icon {
+  -fx-pref-width: 150px;
+  -fx-pref-height: 100px;
+  -fx-background-radius: 80px;
+  -jfx-toggle-color: #778299;
+  -jfx-untoggle-color: transparent;
+  -fx-text-fill: white;
+}
+.toggle-icon.glyph-icon {
+  -fx-fill: white;
+}
+.toggle-icon:selected .glyph-icon {
+  -fx-fill: white;
+}
+.toggle-icon:hover {
+  -fx-pref-width: 150px;
+  -fx-pref-height: 100px;
+  -fx-background-radius: 80px;
+  -fx-background-color: #778299;
+  -fx-text-fill: white;
+}
+.toggle-icon:hover .glyph-icon {
+  -fx-fill: white;
+}
+.continue-icon {
+  -fx-background-radius: 60px;
+  -jfx-toggle-color: #778299;
+  -jfx-untoggle-color: transparent;
+  -fx-text-fill: white;
+}
+.continue-icon:focused {
+  -fx-background-radius: 60px;
+  -fx-background-color: #778299;
+}
+.continue-icon:hover {
+  -fx-background-radius: 60px;
+  -fx-background-color: #778299;
+  -fx-text-fill: white;
+}
+.continue-icon:hover .glyph-icon {
+  -fx-fill: white;
+}
+.util-icon {
+  -fx-pref-width: 40px;
+  -fx-pref-height: 40px;
+  -fx-background-radius: 15px;
+  -jfx-toggle-color: #778299;
+  -jfx-untoggle-color: transparent;
+  -fx-text-fill: black;
+}
+
+.util-icon:active {
+  -fx-background-color: #778299;
+  -fx-text-fill: white;
+  -jfx-toggle-color: transparent;
+  -jfx-untoggle-color: transparent;
+}
+.util-icon:hover {
+  -fx-pref-width: 40px;
+  -fx-pref-height: 40px;
+  -fx-background-radius: 15;
+  -fx-background-color: #778299;
+  -fx-text-fill: white;
+}
+.util-icon:hover .glyph-icon {
+  -fx-fill: white;
+}
+.util-icon .glyph-icon {
+  -fx-fill: black;
+}
+/*******************************************************************************
+*                                                                              *
+* 						                  JFX Slider                                     *
+*                                                                              *
+*******************************************************************************/
+
+.slider .slider-value {
+  -fx-font-size: 15px;
+  -fx-fill: white;
+}
+.jfx-slider .animated-thumb {
+  -fx-pref-height: 40;
+  -fx-pref-width: 40;
+}
+/*******************************************************************************
+*                                                                              *
+* 						               JFX Date Picker                                   *
+*                                                                              *
+*******************************************************************************/
+.date-picker {
+  -fx-font-family: "JetBrains Mono NL SemiBold";
+  -fx-font-size: 20px;
+  -fx-fill: white;
+}
+.date-picker .text-field {
+  -jfx-focus-color: white;
+  -jfx-unfocus-color: white;
+  -fx-text-fill: white;
+}
+.date-picker > .arrow-button > .jfx-svg-glyph {
+  -fx-background-color: white;
+}
+.date-picker > .arrow-button {
+  -fx-background-image: url(resources/calendar.png);
+  -fx-background-size: 80% 80%; /* Can be `cover` or `100% 100%` ect. */
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center center;
+}
+.date-picker > .month-year-pane {
+  -fx-background-color: white;
+}
+/*******************************************************************************
+*                                                                              *
+* 						                 JFX ListView                                    *
+*                                                                              *
+*******************************************************************************/
+.list-view {
+  -fx-font-family: "JetBrains Mono NL SemiBold";
+  -fx-font-size: 20px;
+  -fx-fill: white;
+  -fx-background-radius: 30px;
+  -visibility: false;
+}
+.list-view .scroll-bar {
+  visibility: false;
+}
+.list-view .scroll-bar:vertical {
+  -fx-scale-x: 0;
+}
+.list-view :odd,
+.list-view :even {
+  -fx-background-radius: 30px;
+}
+
+.list-view :hover {
+  /* -fx-background-color: #778299; */
+  -fx-background-radius: 30px;
+}
+.list-view :filled {
+  -fx-background-color: #778299;
+  -fx-background-radius: 30px;
+}
